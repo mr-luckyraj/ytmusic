@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href={% static "styles.css" %}>
+</head>
+<body>
+    <div class="mains">
+        <div class="main">
+            <img class="image" alt="cover" src="{{ imgrul }}" width="250px">
+        </div>
+        <div class="buttons">
+            <audio id="audio" src="{{ url }}" autoplay></audio>
+            <div id="play" onclick="playPause()"></div>
+        </div>
+    </div>
+    <script src={% static "script.js" %}></script>
+</body>
+</html>
