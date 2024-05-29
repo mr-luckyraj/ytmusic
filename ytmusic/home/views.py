@@ -5,7 +5,7 @@ from googleapiclient.errors import HttpError
 from django.http import HttpResponse
 
 def search_videos(query):
-    api_key = "AIzaSyCyHikM0v3c3fG5lD4sY72Mpr3PbSv0Nx8"  # Replace with your actual API key
+    api_key = "your api key"  # Replace with your actual API key
     youtube = build('youtube', 'v3', developerKey=api_key)
 
     search_response = youtube.search().list(
